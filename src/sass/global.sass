@@ -1,0 +1,136 @@
+body
+   font-family: 'SF Pro Display', sans-serif
+   background: #F5F5F5
+   font-weight: 400
+   font-size: 18px
+   line-height: 143.336%
+   color: #1D1D1C
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $brown
+.container
+   padding: 0 70px
+   max-width: 1920px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px !important
+      padding: 0 40px 
+   @media (max-width: 991px)
+      max-width: 720px !important
+      padding: 0 25px !important
+   @media (max-width: 767px)
+      max-width: 540px !important
+      padding: 0 15px !important
+.d-flex, .q
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   font-family: 'Floripa'
+   margin: 0
+   font-size: 113px
+   font-style: normal
+   font-weight: 400
+   line-height: 93%
+h2 
+   font-family: 'Floripa'
+   margin: 0
+   font-size: 113px
+   font-style: normal
+   font-weight: 400
+   line-height: normal
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg 
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $brown !important
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   color: white
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 2px solid #FF9900 !important
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+   &.error 
+      border: 2px solid red !important
+label.error 
+   display: none !important
+path
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $brown
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 4px
+   width: 4px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $brown
+   border-radius: 6px
+.btn 
+   display: flex
+   align-items: center
+   justify-content: space-between
+   width: 888px
+   height: 107px
+   padding: 0 30px
+   background: #1D1D1C
+   border: 3px solid #1D1D1C
+   p 
+      transition: 0.5s
+      color: #FFF
+      font-size: 50px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+      text-transform: uppercase
+   &:hover 
+      background: transparent
+      p 
+         color: #1D1D1C
+      .svg 
+         path 
+            stroke: #1D1D1C
